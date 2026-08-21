@@ -30,7 +30,32 @@ app.delete ('/produtos/:id', (req, res) => {
 
 })
 
+app.post('/produtos', (req, res) =>{
+    const novoProduto = req.body
 
+    produtos.push(novoProduto)
+
+    res.status(201).json(novoProduto)
+})
+
+app.put('/produtos/:id', (req, res) =>{
+    const id = parseInt(req.params.id)
+
+    const index = produtos.findIndex(produto => produto.id === id)
+
+    if (index !== -1){
+        produtos[index] = {
+            ...produtos[index],
+            ...req.body,
+            id: id
+        }
+
+        res.json(produtos[index])
+    } else {
+        res.status(404).send("Esse id não existe")
+    }
+
+})
 
 const port=3000
 app.listen (3000, (e) => {
