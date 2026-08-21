@@ -1,0 +1,24 @@
+{
+  "name": "isarepodiaw",
+  "version": "1.0.0",
+  "description": "Repositório 2.0 para aula do Rommel de Diaw",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isadoraalvarenga/isarepodiaw.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/isadoraalvarenga/isarepodiaw/issues"
+  },
+  "homepage": "https://github.com/isadoraalvarenga/isarepodiaw#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
